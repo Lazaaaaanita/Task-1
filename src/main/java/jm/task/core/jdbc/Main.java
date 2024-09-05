@@ -6,13 +6,12 @@ import jm.task.core.jdbc.service.UserServiceImpl;
 
 public class Main {
         // реализуйте алгоритм здесь
-        private static final User user1 = new User("Екатерина", "Погорельцева", (byte) 21);
-        private static final User user2 = new User("Виктор", "Тоноев", (byte) 31);
-        private static final User user3 = new User("Валентина", "Назарова", (byte) 70);
-        private static final User user4 = new User("Евгений", "Зайцев", (byte) 46);
-
         public static void main (String[]args){
             UserService userService = new UserServiceImpl();
+            User user1 = new User("Екатерина", "Погорельцева", (byte) 21);
+            User user2 = new User("Виктор", "Тоноев", (byte) 31);
+            User user3 = new User("Валентина", "Назарова", (byte) 70);
+            User user4 = new User("Евгений", "Зайцев", (byte) 46);
             userService.createUsersTable();
             userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
             userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
