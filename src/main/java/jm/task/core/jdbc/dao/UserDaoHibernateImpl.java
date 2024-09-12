@@ -33,11 +33,11 @@ public class UserDaoHibernateImpl implements UserDao {
         }
         catch(HibernateException e){
             e.printStackTrace();
-        }
-        finally {
             if( transaction!=null && transaction.isActive()){
                 transaction.rollback();
             }
+        }
+        finally {
             session.close();
         }
     }
@@ -58,11 +58,11 @@ public class UserDaoHibernateImpl implements UserDao {
         }
         catch(HibernateException e){
             e.printStackTrace();
-        }
-        finally {
             if( transaction!=null && transaction.isActive()){
                 transaction.rollback();
             }
+        }
+        finally {
             session.close();
         }
     }
@@ -81,11 +81,11 @@ public class UserDaoHibernateImpl implements UserDao {
         }
         catch(HibernateException e){
             e.printStackTrace();
-        }
-        finally {
             if( transaction!=null && transaction.isActive()){
                 transaction.rollback();
             }
+        }
+        finally {
             session.close();
         }
     }
@@ -104,11 +104,11 @@ public class UserDaoHibernateImpl implements UserDao {
         }
         catch(HibernateException e){
             e.printStackTrace();
-        }
-        finally {
             if( transaction!=null && transaction.isActive()){
                 transaction.rollback();
             }
+        }
+        finally {
             session.close();
         }
     }
@@ -127,11 +127,11 @@ public class UserDaoHibernateImpl implements UserDao {
         }
         catch(HibernateException e){
             e.printStackTrace();
-        }
-        finally {
             if( transaction!=null && transaction.isActive()){
                 transaction.rollback();
             }
+        }
+        finally {
             session.close();
         }
         return  allUser;
@@ -153,11 +153,11 @@ public class UserDaoHibernateImpl implements UserDao {
         }
         catch(HibernateException e){
             e.printStackTrace();
-        }
-        finally {
             if( transaction!=null && transaction.isActive()){
                 transaction.rollback();
             }
+        }
+        finally {
             session.close();
         }
     }
